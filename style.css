@@ -1,0 +1,87 @@
+:root {
+  /* Color */
+  --color-navy: #232946;
+  --color-ivory: #d4d8f0;
+  --color-pink: #eebbc3;
+  --color-white: #fffffe;
+}
+
+/* Genenral */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+
+/* Typography */
+
+.logo {
+  display: inline-block;
+  font-weight: 800;
+  font-style: italic;
+  border-bottom: 2px solid var(--color-white);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+}
+
+.header-subtitle {
+  font-weight: 400;
+}
+
+.btn-mint {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.footer-copyright {
+  font-size: 0.875rem;
+}
+
+/* Layout */
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(1em,1fr) minmax(0px, 500px) minmax(1em, 1fr);
+}
+
+header > * {
+  grid-column: 2;
+}
+
+main > * {
+  grid-column: 2;
+}
+
+footer > * {
+  grid-column: 2;
+}
